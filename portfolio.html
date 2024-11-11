@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3a3a3a; /* Dark gray background color */
+            padding: 20px;
+        }
+        
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #d4cfcfde;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .heading h1 {
+            font-family: sans-serif; /* Sans-serif font for the heading */
+            font-size: 50px;
+            color: white;
+            margin-bottom: 25px;
+            position: relative;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: green; /* Green underline */
+        }
+        .photo-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        img {
+            height: 235px; /* Changed height to 235px */
+            width: 165px; /* Changed width to 165px */
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+             /* Same size for all images */
+        }
+        img:hover {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+        .text-container {
+            flex: 1;
+            padding: 0 20px; /* Add padding for spacing */
+            text-align: left; /* Align text to the left */
+        }
+        h2.photoText {
+            font-size: 24px; /* Larger font size for the first text */
+            color: white;
+            margin-bottom: 10px; /* Adjust spacing */
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: white;
+            display: block; /* Display text initially */
+            margin-top: 0; /* Remove default margin */
+        }
+        .photo-container.right-layout {
+            flex-direction: row-reverse; /* Reverse the order for right layout */
+        }
+        .photo-container.right-layout .text-container {
+            text-align: right; /* Align text to the right for right-layout */
+        }
+        header {
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between; /* Align items to the ends */
+            align-items: center;
+            height: 70px;
+        }
+        img.header-img {
+            width: 70%;
+            height: auto;
+            cursor: pointer;
+        }
+        .header-links {
+            display: flex;
+            align-items: center;
+        }
+        .header-links a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            position: relative;
+            transition: color 0.3s;
+        }
+        .header-links a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 0;
+            height: 100%;
+            background-color: #00CED1;
+            z-index: -1;
+            transition: width 0.3s, left 0.3s;
+            transform: translateX(-50%);
+            transform-origin: center;
+        }
+        .header-links a:hover::before {
+            width: calc(100% + 30px);
+            left: -15px;
+        }
+        .header-links a:hover {
+            color: #fff;
+            background-color: #00CED1;
+        }/* Footer styles */
+        footer {
+            background-color: #071850; /* Set your desired footer background color */
+            color: #fff; /* Set text color for the footer */
+            text-align: center;
+            padding: 20px; /* Add padding for better spacing */
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Wrap the image in an anchor tag to reload the page when clicked -->
+        <a href="C:\MyProject\index.html">
+            <!-- Insert your image source (src) and alt text here -->
+            <img src="C:\MyProject\Chemistry virtual labs logo.png" alt="Your Image Alt Text" class="header-img" style="transform: none;">
+        </a>
+        <!-- Optionally, you can add a heading or other content -->
+        <div class="header-links">
+            <a href="C:\MyProject\about.html" >About</a>
+            <a href="C:\MyProject\videogallery.html">Dive into Virtual lab</a>
+            
+            <a href="C:\MyProject\portfolio.html">Developer Contact</a>
+            <a href="https://eternaluniversity.edu.in/docs/basic-sciences-equipments.pdf" target="_blank">Chemical Equipments</a>
+        </div>
+    </header>
+    <div class="heading">
+        <body background="https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149008629.jpg"></body>
+        
+        <h1> DEVELOPERS WING</h1>
+    </div>
+
+    <!-- Photo 1 (Left Layout) -->
+    <div class="photo-container">
+        <img src="C:\MyProject\YBR.jpg" alt="Photo 1">
+        <div class="text-container">
+            <h2 class="photoText">
+                YESU BABU.RAYAVARAPU</h2> 
+            <p>I firmly design the digital tapestry of tomorrow, merging creativity with code. Innovating the future, one stack at a time. 💻✨<br>   <br>
+                Designation:Project Incharge & Full-Stack Developer<br>Mail:yesubaburayavarapu483@hotmail.com<br>
+            <!-- LinkedIn logo with link to your LinkedIn profile -->
+            <a href="https://www.linkedin.com/in/yesubabu-rayavarapu-b81196247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="https://download.logo.wine/logo/LinkedIn/LinkedIn-Logo.wine.png" alt="LinkedIn Profile" style="width: 90px; height: 80px;">
+            </a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Photo 2 (Right Layout) -->
+    <div class="photo-container right-layout">
+        <img src="C:\MyProject\Viswanadh.jpg" alt="Photo 2">
+        <div class="text-container">
+            <h2 class="photoText">
+                U.S.S VISWANATH</h2>
+                <p>"Crafting innovation from code, front to back."<br>  <br>Designation:Project Manager & Full-Stack Developer<br>Mail:ullissviswanath6903@gmail.com<br>
+            </p>
+            <!-- LinkedIn logo with link to your LinkedIn profile -->
+            <a href="" target="_blank">
+                <img src="https://download.logo.wine/logo/LinkedIn/LinkedIn-Logo.wine.png" alt="LinkedIn Profile"style="width: 90px; height: 80px;">
+            </a>
+        </div>
+    </div>
+
+    <!-- Rest of your photo containers -->
+    <!-- Photo 3 (Left Layout) -->
+    <div class="photo-container">
+        <img src="C:\MyProject\Prav.jpg" alt="Photo 3"style="width: 150px;">
+        <div class="text-container">
+            <h2 class="photoText">
+                PRAVEENA POSUPO</h2>
+                <p>"Pioneering the future of frontend development,transforming visions into pixel-perfect realities."<br>  <br>Designation:Lead Front-End Developer<br>Mail:praveenaposupo@gmail.com<br>
+            </p>
+            <!-- LinkedIn logo with link to your LinkedIn profile -->
+            <a href="https://www.linkedin.com/in/posupo-praveena-968410305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="https://download.logo.wine/logo/LinkedIn/LinkedIn-Logo.wine.png" alt="LinkedIn Profile" style="width: 90px; height: 80px;">
+              </a>
+        </div>
+    </div>
+
+    <!-- Photo 4 (Right Layout) -->
+    <div class="photo-container right-layout">
+        <img src="C:\MyProject\Srinu.jpg" alt="Photo 4"style="width: 150px;">
+        <div class="text-container">
+            <h2 class="photoText">
+                S.D.S SAI SRINIVAS</h2>
+                <p>"Master of frontend magic, shaping the digital landscape with creativity and precision."<br>  <br>Designation:Front-End Developer<br>Mail:sdsssrinivas@gmail.com<br>
+            </p>
+            <!-- LinkedIn logo with link to your LinkedIn profile -->
+            <a href="https://www.linkedin.com/in/srinivas-sambathula-a23951304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="https://download.logo.wine/logo/LinkedIn/LinkedIn-Logo.wine.png" alt="LinkedIn Profile" style="width: 90px; height: 80px;">
+              </a>
+        </div>
+    </div>
+
+    <!-- Photo 5 (Left Layout) -->
+    <div class="photo-container">
+        <img src="C:\MyProject\Vnc.jpg" alt="Photo 5"style="width: 150px;">
+        <div class="text-container">
+            <h2 class="photoText">
+                RAKSHITHA VENCY.M</h2>
+        <p>"Backend maestro, orchestrating the backbone of digital infrastructure with precision and innovation."<br>  <br>Designation:Lead Back-End Developer<br>Mail:rakshithavency@gmail.com<br>
+         </p>
+         <a href="https://www.linkedin.com/in/munganda-rakshitha-vency-806a70304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <img src="https://download.logo.wine/logo/LinkedIn/LinkedIn-Logo.wine.png" alt="LinkedIn Profile" style="width: 90px; height: 80px;">
+          </a>
+    </div>
+        </div>
+    </div>
+
+    <!-- Photo 6 (Right Layout) -->
+    <div class="photo-container right-layout">
+        <img src="C:\MyProject\jnani.jpg" alt="Photo 6"style="width: 150px;">
+        <div class="text-container">
+            <h2 class="photoText">
+                JNANESWAR.PUNCHADA</h2>
+               <p>"Master of backend magic, transforming complex challenges into elegant solutions with expertise and ingenuity."<br>   <br>Designation:Back-End Developer<br>Mail:jnaneswarpunchada@gmail.com<br>
+            </p>
+            <a href="https://www.linkedin.com/in/jnaneswar-panchada-7a3a30304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="https://download.logo.wine/logo/LinkedIn/LinkedIn-Logo.wine.png" alt="LinkedIn Profile" style="width: 90px; height: 80px;">
+              </a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Photo 7 (Left Layout) -->
+    <div class="photo-container">
+        <img src="C:\MyProject\ali.jpg" alt="Photo 7"style="width: 150px;">
+        <div class="text-container">
+            <h2 class="photoText">
+                Y.S.D ALEKHYA</h2>
+                <p>"Master of the testing realm, leveraging expertise and innovation to identify and resolve issues before they impact users."<br>  <br>Designation:Tester<br>Mail:saidurgaalekhya@gmail.com<br>
+            </p>
+            <a href="https://www.linkedin.com/in/yalamarthi-sai-durga-alekhya-40a550304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="https://download.logo.wine/logo/LinkedIn/LinkedIn-Logo.wine.png" alt="LinkedIn Profile" style="width: 90px; height: 80px;">
+              </a>
+        </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <a href="#" onclick="window.location.reload();">
+            <img src="C:\MyProject\Chemistry virtual labs logo.png" style="width: 290px; height: 80px;" alt="Reload Image" class="footer-img">
+        </a>
+        <p>&copy; 2024 ChemVLabs. All Rights Reserved.<br>A site by Unity Seven Crew<br>Write your queries to <a href="mailto:unitysevencrew@yahoo.com">unitysevencrew@yahoo.com</a></p>
+    </footer>
+    
+</div>
+</body>
+</html>
+

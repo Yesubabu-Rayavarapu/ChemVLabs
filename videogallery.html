@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">:root{
+
+}
+
+*{
+	margin: 0; 
+	padding: 0;
+	
+}
+body{
+	
+padding-bottom: 20px;
+}
+.container{
+	width: 80%;
+	margin: 80px auto;
+}
+.container h1{
+	padding: 60px 0;
+	color: #fff;
+	font-size:44px;
+	text-align: center; 
+	text-decoration: underline;
+	text-decoration-color: rgb(2,2,74);  
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.col{
+	flex-basis: 50%;
+	min-width: 250px;
+}
+.col2{
+	flex: 1;
+    min-width: 250px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* Display scrollbar only when needed */
+    scrollbar-color:  transparent; /* Customize scrollbar color */
+    max-height: 380px; /* Example: Set a maximum height for the container */
+    padding-right: 10px;
+	
+
+}
+.feature-img{
+	width: 83%;
+	margin: auto;
+position: relative;
+border-radius: 6px;
+overflow: hidden;
+}
+.small-img-row{
+	display: flex;
+	background:#efefef;
+	margin: 20px 0;
+	align-items: center;
+	border-radius: 6px;
+	overflow: hidden;
+	width: 85%;
+
+}
+.small-img{
+	position:relative; 
+}
+.small-img img{
+	width: 150px;
+}
+.small-img-row p{
+margin-left: 20px;
+
+
+font-size: 15px;
+
+}
+.play-btn{
+	width: 60px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	cursor: pointer;
+
+}
+.small-img .play-btn{
+	width: 35px;
+}
+.video-player{
+	width: 80%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	display: none;
+
+}
+video: focus{
+	outline: none;
+}
+
+.close-btn{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	cursor: pointer;
+
+}
+.subhead{
+	color: white;
+}
+.para{
+	
+	
+	background-color: white;
+	margin-right: 200px;
+	margin-left: 200px;
+	border-radius: 10px;
+
+
+}
+.para h2{
+	text-align: center;
+	text-decoration: underline;
+}
+.para p{
+	color: purple;
+
+}
+header {
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between; /* Align items to the ends */
+            align-items: center;
+            height: 90px;
+
+        }
+        img.header-img {
+            width: 75%;
+            height: auto;
+            cursor: pointer;
+            padding-top: 25px;
+        }
+        .header-links {
+            display: flex;
+            align-items: center;
+        }
+        .header-links a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            position: relative;
+            transition: color 0.3s;
+        }
+        .header-links a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 0;
+            height: 100%;
+            background-color: #00CED1;
+            z-index: -1;
+            transition: width 0.3s, left 0.3s;
+            transform: translateX(-50%);
+            transform-origin: center;
+        }
+        .header-links a:hover::before {
+            width: calc(100% + 30px);
+            left: -15px;
+        }
+        .header-links a:hover {
+            color: #fff;
+            background-color: #00CED1;
+        }
+		/* Footer styles */
+        footer {
+            background-color: #071850; /* Set your desired footer background color */
+            color: #fff; /* Set text color for the footer */
+            text-align: center;
+            padding: 20px; /* Add padding for better spacing */
+            width: 100%;
+        }
+		</style>
+
+</head>
+<body background="background2.jpg" style="background-repeat: repeat;
+	background-size: 400px;
+	">
+	<header style="padding-top: 0px;">
+        <!-- Wrap the image in an anchor tag to reload the page when clicked -->
+        <a href="C:\MyProject\index.html">
+            <!-- Insert your image source (src) and alt text here -->
+            <img src="C:\MyProject\Chemistry virtual labs logo.png" alt="Your Image Alt Text" class="header-img">
+        </a>
+        <!-- Optionally, you can add a heading or other content -->
+        <div class="header-links">
+            <a href="C:\MyProject\about.html" >About</a>
+            <a href="C:\MyProject\videogallery.html">Dive into Virtual lab</a>
+            <a href="C:\MyProject\portfolio.html">Developer Contact</a>
+                        <a href="https://eternaluniversity.edu.in/docs/basic-sciences-equipments.pdf" target="_blank">Chemical Equipments</a>
+
+        </div>
+    </header>
+<div class="container">
+	<h1>VIDEO GALLERY</h1>
+	<div class="row">
+		<div class="col">
+			<div class="feature-img">
+				<img src="video1.jpg" width="100%">
+				<img src="play.jpg" class="play-btn" onclick="playvideo('video1.mp4')">
+			</div>
+		</div>
+		<div class="col2">
+			
+			
+			<div class="small-img-row">
+				<div class="small-img">
+					<img src="video2.jpg" >
+					<img src="play.jpg" class="play-btn">
+					<img src="play.jpg" class="play-btn" onclick="playvideo('video2.mp4')">
+				</div>
+				<p> ADVANTAGES OF A VIRTUAL LAB</p>
+			</div>
+			<div class="small-img-row">
+				<div class="small-img">
+					<img src="video3.jpg" >
+					<img src="play.jpg" class="play-btn">
+					<img src="play.jpg" class="play-btn" onclick="playvideo('video3.mp4')">
+				</div>
+				<p> REVOLUTION IN EDUCATION FIELD</p>
+			</div>
+			<div class="small-img-row">
+				<div class="small-img">
+					<img src="video4.jpg" >
+					<img src="play.jpg" class="play-btn">
+					<img src="play.jpg" class="play-btn" onclick="playvideo('video4.mp4')">
+				</div>
+				<p> OUTCOMES OF VIRTUAL LAB</p>
+			</div>
+			<div class="small-img-row">
+				<div class="small-img">
+					<img src="video5.jpg" >
+					<img src="play.jpg" class="play-btn">
+					<img src="play.jpg" class="play-btn" onclick="playvideo('video5.mp4')">
+				</div>
+				<p> HOW TO USE VIRTUAL LAB</p>
+			</div>
+			<div class="small-img-row">
+				<div class="small-img">
+					<img src="video6.jpg" >
+					<img src="play.jpg" class="play-btn">
+					<img src="play.jpg" class="play-btn" onclick="playvideo('video6.mp4')">
+				</div>
+				<p> MORE INTERACTABLE THAN OTHER WAYS</p>
+			</div>
+			<div class="small-img-row">
+				<div class="small-img">
+					<img src="video7.jpg" >
+					<img src="play.jpg" class="play-btn">
+					<img src="play.jpg" class="play-btn" onclick="playvideo('video7.mp4')">
+				</div>
+				<p> OVERVIEW ON A RANDOM VL</p>
+			</div>
+			<div class="small-img-row">
+				<div class="small-img">
+					<img src="video8.jpg" >
+					<img src="play.jpg" class="play-btn">
+					<img src="play.jpg" class="play-btn" onclick="playvideo('video8.mp4')">
+				</div>
+				<p> RANDOM EXPERIMENT USING VL</p>
+			</div>
+			<div class="small-img-row">
+				<div class="small-img">
+					<img src="video9.jpg" >
+					<img src="play.jpg" class="play-btn">
+					<img src="play.jpg" class="play-btn" onclick="playvideo('video9.mp4')">
+				</div>
+				<p>RANDOM EXPERIMENT USING VL </p>
+			</div>
+			<div class="small-img-row">
+				<div class="small-img">
+					<img src="video10.jpg" >
+					<img src="play.jpg" class="play-btn">
+					<img src="play.jpg" class="play-btn" onclick="playvideo('video10.mp4')">
+				</div>
+				<p>EXPERTS REVIEW ON VIRTUAL LABS</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="video-player" id="videoplayer">
+	<video width="100%" controls="" id="myvideo">
+		<source src="video1.mp4" type="video/mp4">
+	</video>
+	<img src="close.jpg" class="close-btn" onclick="stopvideo()">
+</div>
+<div class="para" ><h2>VIDEO GALLERY OF VL</h2><br><h3>Unleash the Inner Scientist: Explore the Wonders of the Virtual Lab Video Gallery:</h3><br><b><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The sterile confines of a traditional laboratory can often feel intimidating or inaccessible. But what if you could explore the fascinating world of science from the comfort of your living room?  The virtual lab video gallery throws open the doors to a universe of scientific discovery, transforming learning into an engaging and interactive adventure.Imagine peering into the microscopic world, witnessing the intricate dance of molecules within a cell brought to life in stunning 3D animation. No longer confined by the limitations of a physical microscope, you can zoom in and out, rotate structures, and delve deeper into the building blocks of life.The virtual lab isn't just about observation, it's about active participation. Don the virtual lab coat and become the conductor of your own scientific symphony. Manipulate virtual beakers and test tubes, adjust variables in real-time, and observe the dynamic changes unfold before your eyes. Witness firsthand the explosive fizz of a chemical reaction or the mesmerizing flow of electricity through a circuit. The virtual lab allows you to experiment freely, without the constraints of expensive equipment or the risks associated with hazardous materials.</p><br><P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Immerse yourself in a world of scientific exploration with a video gallery of virtual labs! This isn't your average collection of dusty textbooks and blurry diagrams. Here, you'll find engaging video demonstrations that bring science to life. Watch as virtual beakers bubble and circuits crackle, all from the comfort of your own home. Explore dissections of a frog or witness the inner workings of a cell, all in stunning 3D animation.  This video gallery is your gateway to a limitless laboratory, perfect for students, educators, or anyone curious about the wonders of science.This virtual lab video gallery makes scientific exploration accessible to everyone.  Whether you're a seasoned researcher or a student taking your first steps in science, these videos cater to all levels.  Replay key steps in an experiment, zoom in for a closer look at a specific process, or rewind if you miss a detail.  The virtual lab video gallery puts the power of scientific discovery at your fingertips, empowering you to learn and explore at your own pace.</p><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No longer are geographical limitations or safety concerns a barrier to scientific exploration. Dive into the world of the virtual lab video gallery, a treasure trove of interactive learning experiences that shatters the traditional boundaries of the laboratory. Imagine dissecting a virtual frog in intricate detail, without the ethical concerns or limitations of a physical specimen. Witness the spectacular dance of chemical reactions in 360-degree simulations, allowing you to examine the process from every angle. This isn't a passive viewing experience; the gallery empowers you to take control.  Manipulate virtual lab equipment, adjust variables in real-time, and analyze the outcomes – all from the comfort and safety of your own computer screen.  The virtual lab video gallery transcends the limitations of time and space, allowing you to explore groundbreaking experiments from history or peek into the future of scientific discovery. It's a portal to a limitless learning landscape, fostering curiosity and igniting a passion for science in learners of all ages.</p></b></div><br>  <br>
+<script type="text/javascript">
+  var videoplayer = document.getElementById("videoplayer");
+  var myvideo = document.getElementById("myvideo");
+
+  function playvideo(videoSrc) {
+    if (myvideo) { // Check if element is found
+      myvideo.src = videoSrc;
+      videoplayer.style.display = "block";
+    } else {
+      console.error("myvideo element not found");
+    }
+  }
+
+  function stopvideo() {
+    if (videoplayer) { // Check if element is found
+      videoplayer.style.display = "none";
+    } else {
+      console.error("videoplayer element not found");
+    }
+  }
+</script>
+<!-- Footer -->
+<footer>
+	<a href="#" onclick="window.location.reload();">
+		<img src="C:\MyProject\Chemistry virtual labs logo.png" style="width: 290px; height: 80px;" alt="Reload Image" class="footer-img">
+	</a>
+	<p>&copy; 2024 ChemVLabs. All Rights Reserved.<br>A site by Unity Seven Crew<br>All rights reserved for the creators/owners of the respective video</p>
+</footer>
+</div>
+
+
+</script>
+</body>
+</html>
