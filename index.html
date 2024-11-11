@@ -6,7 +6,7 @@
     <title>ChemVLabs</title>
     <style>
         /* Add your CSS styles here */
-        .heading{
+    .heading{
     width: 90%;
     display: flex;
     justify-content: center;
@@ -14,27 +14,45 @@
     flex-direction: column;
     text-align: center;
     margin: 20px auto;
-}
-.heading h1{
-    font-size: 50px;
-    color: #000;
-    margin-bottom: 25px;
-    position: relative;
- }
- .heading h1::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    display: block;
-    margin: 0 auto;
-    background-color: #4caf50;
- }
- .heading p{
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 35px;
- }
+    }
+        img.header-img {
+            width: 70%;
+            height: auto;
+            cursor: pointer;
+        }
+        .header-links {
+            display: flex;
+            align-items: center;
+        }
+        .header-links a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            position: relative;
+            transition: color 0.3s;
+        }
+        .header-links a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 0;
+            height: 100%;
+            background-color: #00CED1;
+            z-index: -1;
+            transition: width 0.3s, left 0.3s;
+            transform: translateX(-50%);
+            transform-origin: center;
+        }
+        .header-links a:hover::before {
+            width: calc(100% + 30px);
+            left: -15px;
+        }
+        .header-links a:hover {
+            color: #fff;
+            background-color: #00CED1;
+        }
         .main-content {
             background-color: #f8f8f8;
             padding: 20px;
